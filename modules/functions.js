@@ -1,18 +1,14 @@
-const BookInfo = document.getElementById('booksContainer');
+const bookInfo = document.getElementById('booksContainer');
 const titleSect1 = document.getElementById('title-sec1');
-const titleInput = document.getElementById('title');
-const authorInput = document.getElementById('author');
 
-let getMyLibrary = JSON.parse(localStorage.getItem('mesLivres1'));
-
-import { Books, StorageFun, booksData } from './books.js'
+import { bookList } from './books.js'
 
 
-const renderBook = (dataArr) => {
-  BookInfo.innerHTML = '';
-  dataArr.forEach((element, id) => {
+const renderBook = (getMyLibrary) => {
+  bookInfo.innerHTML = '';
+  getMyLibrary.forEach((element, id) => {
     const tr = document.createElement('tr');
-    BookInfo.appendChild(tr);
+    bookInfo.appendChild(tr);
     const td = document.createElement('td');
 
     tr.setAttribute('id', `${id}`);
@@ -37,27 +33,12 @@ const renderBook = (dataArr) => {
     deleteButton.innerText = 'Delete';
     td2.appendChild(deleteButton);
 
-    deleteButton.addEventListener('click', () => booksData.deleteBook(`${id}`));
+    deleteButton.addEventListener('click', () => bookList.deleteBook(id));
   })
 }
 
-//     BookInfo.innerHTML += `<tr>
-//       <td class="ms-4 fs-5">
-//         <span class="ms-3">
-//           "${element.title}" by ${element.author}
-//         </span>
-//       </td>
-//       <td class="d-flex">
-//         <button class="btn btn-warning fs-5 mx-auto" onclick = "StorageFun(${index})">
-//           Delete
-//         </button>
-//       </td>
-//     </tr>`;
-//   });
-// }
-
-const showTitle = (dataArr) => {
-  if (dataArr.length === 0) {
+const showTitle = (getMyLibrary) => {
+  if (getMyLibrary.length === 0) {
     titleSect1.innerHTML = '';
     titleSect1.innerHTML += 'there are no books yet but they will soon appear here';
   } else {
@@ -67,12 +48,10 @@ const showTitle = (dataArr) => {
 }
 
 const storage = () => {
-  if (JSON.parse(localStorage.getItem('mesLivres1')) === null) {
-    getMyLibrary = [];
-  } else {
-    getMyLibrary = JSON.parse(localStorage.getItem('mesLivres1'));
+  if (JSON.parse(localStorage.getItem('booksStorage')) === null) {
+    localStorage.setItem('booksStorage', JSON.stringify([]));
   }
-  return getMyLibrary;
+  return JSON.parse(localStorage.getItem('booksStorage'));
 }
 
 export { renderBook, showTitle, storage };

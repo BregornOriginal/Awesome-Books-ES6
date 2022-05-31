@@ -46,4 +46,5 @@ const navNavLink = contactNavLink.addEventListener('click', (e) => {
   myContact.classList.remove('d-none');
 });
 
-export {navNewBook, navMyList, navHome, navNavLink};
+
+export { navNewBook, navMyList, navHome, navNavLink };

@@ -1,6 +1,5 @@
 const titleInput = document.getElementById('title');
 const authorInput = document.getElementById('author');
-let getMyLibrary = JSON.parse(localStorage.getItem('mesLivres1'));
 
 import { renderBook } from './functions.js'
 import { storage } from "./functions.js";
@@ -18,12 +17,13 @@ export class StorageFun {
   }
 
   updateStorage = () => {
-    localStorage.mesLivres1 = JSON.stringify(this.array);
+    localStorage.booksStorage = JSON.stringify(this.array);
   };
 
   addBook = () => {
     const newBook = new Books(titleInput.value, authorInput.value);
     this.array.push(newBook);
+
     this.updateStorage();
     renderBook(storage());
     titleInput.value = '';
@@ -32,12 +32,9 @@ export class StorageFun {
 
   deleteBook = (id) => {
     this.array.splice(id, 1);
-    // const book = document.getElementById(`${id}`);
-    // book.remove();
-    // this.array = this.array.filter((book) => book.id !== id);
     this.updateStorage();
     renderBook(storage());
   };
 }
 
-export const booksData = new StorageFun();
+export const bookList = new StorageFun(storage());
