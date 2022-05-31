@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Book
+# Awesome Book ES6
 
 > This is a simple javascript project where a user can add a book dynamically into a an array of books.
 
 ## Live Demo
 
-[Live Demo Link](https://masangana.github.io/awesome-book/)
+[Live Demo Link]()
 
 ## Built With
 
@@ -25,10 +25,6 @@
 👤 **@BregornOriginal**
 
 - GitHub: [@githubhandle](https://github.com/@BregornOriginal)
-
-👤 **@masangana**
-
-- GitHub: [@githubhandle](https://github.com/@masangana)
 
 ## 🤝 Contributing
 
