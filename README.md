@@ -6,18 +6,52 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://bregornoriginal.github.io/Awesome-Books-ES6/)
 
-## Built With
+## Build With
 
-- Html
-- Css
-- JavaScript
+### Technologies
+
+🔷HTML
+
+🔷CSS
+
+🔷JAVASCRIPT ES6
+
+### Tools
+
+💠VISUAL STUDIO CODE
+
+💠GITHUB-DESKTOP
+
+💠GITHUB-ACTIONS
+
+💠LINTERS
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### Prerequisites
+
+**To get a local copy up and running follow these simple example steps**.
+
+### Prerequisites
+
+- You need to have a code editor to be able to run the code. VSCode is most preferred.
+
+### Setup
+
+- To clone the code press in the green button at the top right corner in this page
+- Select the method that you want to clone
+
+### Install
+
+- Run it in your code editor
+
+### Usage
+
+- You can download an extension for VSCode named "Live Server" so you can see the actual project working in the browser
 
 
 ## Authors
