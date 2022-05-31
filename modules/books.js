@@ -64,6 +64,6 @@ export const renderBook = (getMyLibrary) => {
     deleteButton.innerText = 'Delete';
     td2.appendChild(deleteButton);
 
-    deleteButton.addEventListener('click', () => StorageFun.deleteBook(id));
+    deleteButton.addEventListener('click', () => bookList.deleteBook(id));
   });
 };
