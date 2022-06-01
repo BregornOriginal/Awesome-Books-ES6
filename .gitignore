@@ -2,5 +2,3 @@
 .stylelintrc.json
 .hintrc
 node_modules
-package-lock.json
-package.json

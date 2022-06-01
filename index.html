@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="EN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Awesome Books</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="home" href="#">Awesome Books</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" id="list">List</a>
+              </li>
+              <li class="nav-item border-start border-3" id="newbookLi">
+                <a class="nav-link" href="#" id="newbook">Add New</a>
+              </li>
+              <li class="nav-item border-start border-3" id="contactNavLinkLi">
+                <a class="nav-link" href="#" id="contactNavLink">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid main-content" id="main-cont">
+      <section class="row gap-3">
+        <div class="col-12 d-flex justify-content-end mt-4 fs-6" ></div>
+        <div class="col-12 d-flex justify-content-end mt-4 fs-6"  ></div>
+        <div class="col-12 d-flex justify-content-end mt-4 fs-6" id="dateTime" ><h1>Date</h1></div>
+      </section>
+      <section class="books-list row" id="bookList">
+        <div class="title col-12 d-flex justify-content-center">
+          <h1 class="mb-3 mt-5" id="title-sec1">Awesome</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <table
+            class="table table-striped table-hover w-75 border border-dark border-4 table-borderless"
+            id="book-Info2"
+          >
+            <tbody id="booksContainer"></tbody>
+          </table>
+        </div>
+      </section>
+  
+      <section class="row d-none" id="myForm">
+        
+
+        <div class="container">
+          <div class="row justify-content-md-center ">
+            
+              <div class="col col-lg-3  bg-light" >
+                <div class="col-md-12 text-center">
+                  <h1>Add a new Book</h1>
+              </div>
+              
+              <div class="form-floating mb-3 bg-light">
+                <input type="email" class="form-control" id="title" placeholder="name@example.com">
+                <label for="title">Book Title</label>
+              </div>
+              <div class="form-floating mb-3 bg-light">
+                <input type="email" class="form-control" id="author" placeholder="name@example.com">
+                <label for="author">Author Name</label>
+              </div>
+              <div class="row bg-light">
+                <div class="d-flex justify-content-end">
+                    <button id="add-book" type="button" class="btn btn-primary btn-lg">Add</button>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+
+      </section>
+      <section class="row d-none" id="myContact">
+        <div class="col-12 d-flex justify-content-center flex-column align-items-center mt-5">
+          <h1>Contact Information</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-center flex-column align-items-center mb-3 mt-5">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h4>
+        </div>
+        <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+          <ul>
+            <li>Our e-mail: Contact@team.com</li>
+            <li>Our Phone: 1234567890
+            </li>
+            <li>Address: Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom bg-opacity-100">
+      <p class="col-md-4 mb-0 ms-4 text-muted text-white" >© Copyright</p>
+    </footer>
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
