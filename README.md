@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://bregornoriginal.github.io/Awesome-Books-ES6/dist)
+[Live Demo Link](https://bregornoriginal.github.io/Awesome-Books-ES6)
 
 ## Build With
 
